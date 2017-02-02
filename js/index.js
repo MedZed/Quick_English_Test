@@ -125,7 +125,7 @@ var all_questions = [{
   question_string: '...... stay the night if it\'s too difficult to get home.',
   choices: {
     correct: "By all means",
-    wrong: ["At all costs", "In all", "n the whole"]
+    wrong: ["At all costs", "In all", "On the whole"]
   }
   
 }
