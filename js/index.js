@@ -247,9 +247,11 @@ Quiz.prototype.render = function(container) {
     $('#quiz-results-message').text(message);
     $('#quiz-results-score').html('You got <b>' + score + '/' + self.questions.length + '</b> questions correct.');
     $('#quiz-results').slideDown();
-    // $('#quiz button').slideUp();
-
-  });
+    var share_link = "https://www.facebook.com/dialog/feed?app_id=184683071273&link=https%3A%2F%2Fmedzed.github.io%2FQuick_English_Test%2F&description=A%20quick%20English%20test.&name=My%20result%20is%20"+ score +"/"+self.questions.length+"%20%3A%20&caption=%20&description=.&redirect_uri=http%3A%2F%2Fwww.facebook.com%2F";
+ 
+    $('#quiz-results-share-score').attr('href', share_link);
+      // $('#quiz button').slideUp();
+    });
   
   // Add a listener on the questions container to listen for user select changes. This is for determining whether we can submit answers or not.
   question_container.bind('user-select-change', function() {
