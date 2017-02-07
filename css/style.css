@@ -124,6 +124,10 @@ margin:10px 0;
     /*background: -webkit-linear-gradient(left, #2ecc71, #27ae60);
   background: linear-gradient(90deg, #2ecc71, #27ae60);*/
   /*color: #FFFFFF;*/
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */
 
   min-width: 100%;
   cursor: pointer;
